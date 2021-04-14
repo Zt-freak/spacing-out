@@ -10,3 +10,4 @@ C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer
 C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.dll
 C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.pdb
 C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.genruntimeconfig.cache
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.csprojAssemblyReference.cache

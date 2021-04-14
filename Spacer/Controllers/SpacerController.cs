@@ -38,12 +38,16 @@ namespace Spacer.Controllers
                         bool parseSuccess = int.TryParse(command[1], out tempInt);
                         if (parseSuccess)
                         {
+                            if (tempInt < 0)
+                            {
+                                tempInt *= -1;
+                            }
                             NumberOfSpaces = tempInt;
                             Console.WriteLine($"Number of spaces changed to: {NumberOfSpaces}");
                         }
                         else
                         {
-                            Console.WriteLine("Exception: Number of spaces must be an integer.");
+                            Console.WriteLine("Exception: Number of spaces must be a positive integer.");
                         }
                         break;
                     case "/character":
