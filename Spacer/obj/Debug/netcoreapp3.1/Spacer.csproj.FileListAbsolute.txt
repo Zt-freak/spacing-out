@@ -1,0 +1,12 @@
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\bin\Debug\netcoreapp3.1\Spacer.exe
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\bin\Debug\netcoreapp3.1\Spacer.deps.json
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\bin\Debug\netcoreapp3.1\Spacer.runtimeconfig.json
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\bin\Debug\netcoreapp3.1\Spacer.runtimeconfig.dev.json
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\bin\Debug\netcoreapp3.1\Spacer.dll
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\bin\Debug\netcoreapp3.1\Spacer.pdb
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.AssemblyInfoInputs.cache
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.AssemblyInfo.cs
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.csproj.CoreCompileInputs.cache
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.dll
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.pdb
+C:\Users\bnkho\source\repos\SpacerSolution\Spacer\obj\Debug\netcoreapp3.1\Spacer.genruntimeconfig.cache
