@@ -34,25 +34,31 @@ namespace Spacer.Controllers
                 switch (command[0])
                 {
                     case "/number":
-                        int tempInt;
-                        bool parseSuccess = int.TryParse(command[1], out tempInt);
-                        if (parseSuccess)
+                        if (CheckAmountOfArguments(command))
                         {
-                            if (tempInt < 0)
+                            int tempInt;
+                            bool parseSuccess = int.TryParse(command[1], out tempInt);
+                            if (parseSuccess)
                             {
-                                tempInt *= -1;
+                                if (tempInt < 0)
+                                {
+                                    tempInt *= -1;
+                                }
+                                NumberOfSpaces = tempInt;
+                                Console.WriteLine($"Number of spaces changed to: {NumberOfSpaces}");
                             }
-                            NumberOfSpaces = tempInt;
-                            Console.WriteLine($"Number of spaces changed to: {NumberOfSpaces}");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Exception: Number of spaces must be a positive integer.");
+                            else
+                            {
+                                Console.WriteLine("Exception: Number of spaces must be a positive integer.");
+                            }
                         }
                         break;
                     case "/character":
-                        SpaceCharacter = command[1][0];
-                        Console.WriteLine($"Spacing character changed to: {SpaceCharacter}");
+                        if (CheckAmountOfArguments(command))
+                        {
+                            SpaceCharacter = command[1][0];
+                            Console.WriteLine($"Spacing character changed to: {SpaceCharacter}");
+                        }
                         break;
                     case "/info":
                         Console.WriteLine($"number of spaces: {NumberOfSpaces}");
@@ -65,13 +71,26 @@ namespace Spacer.Controllers
                         DisplayHelpMessage();
                         break;
                     case "/space":
-                        string textToConvert = input.Remove(0, input.IndexOf(' ') + 1);
-                        Console.WriteLine(ProcessSpacing(textToConvert));
+                        if (CheckAmountOfArguments(command))
+                        {
+                            string textToConvert = input.Remove(0, input.IndexOf(' ') + 1);
+                            Console.WriteLine(ProcessSpacing(textToConvert));
+                        }
                         break;
                 }
                 Console.WriteLine();
             }
             while (!string.IsNullOrWhiteSpace(command[0]));
+        }
+
+        private bool CheckAmountOfArguments(string[] command)
+        {
+            if (command.Length > 1)
+            {
+                return true;
+            }
+            Console.WriteLine("Exception: Missing arguments");
+            return false;
         }
 
         private string ProcessSpacing (string textToConvert)
